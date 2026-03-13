@@ -22,7 +22,7 @@ Each route demonstrates a different validation type.
 ---
 
 ## Project Structure
-'''text
+'''
 zod-validation-api
 ├── src
 │   ├── config
