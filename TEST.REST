@@ -1,0 +1,26 @@
+POST http://localhost:8080/api/users/create
+content-type: application/json
+
+{
+  "name": "Mohit",
+  "email": "mohit@mail.com",
+  "age": 22,
+  "isActive": false,
+  "role": "user",
+  "hobbies": [
+    "cooking",
+    "gaming"
+  ],
+  "address": {
+    "city": "Baroda",
+    "country": "India"
+  },
+  "phone": "8347058863",
+  "password": "123456",
+  "confirmPassword": "123456"
+}
+
+
+###
+GET  http://localhost:8080/api/users/AllUser
+content-type: application/json
