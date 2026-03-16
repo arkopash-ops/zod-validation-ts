@@ -22,7 +22,7 @@ Each route demonstrates a different validation type.
 ---
 
 ## Project Structure
-'''
+```text
 zod-validation-api
 ├── src
 │   ├── config
@@ -43,7 +43,7 @@ zod-validation-api
 │   └── server.ts
 ├── package.json
 └── tsconfig.json
-'''
+```
 
 
 ---
@@ -79,6 +79,42 @@ The API demonstrates the following Zod validation types:
 - Default values
 - Nested object validation
 - Array validation
+
+
+---
+
+# API Endpoints
+
+### 1. Create User
+```http
+POST http://localhost:8080/api/users/create
+content-type: application/json
+
+{
+  "name": "Mohit",
+  "email": "mohit@mail.com",
+  "age": 22,
+  "isActive": false,
+  "role": "user",
+  "hobbies": [
+    "cooking",
+    "gaming"
+  ],
+  "address": {
+    "city": "Baroda",
+    "country": "India"
+  },
+  "phone": "8347058863",
+  "password": "123456",
+  "confirmPassword": "123456"
+}
+```
+
+### 2. Get All Users
+```http
+GET  http://localhost:8080/api/users/AllUser
+content-type: application/json
+```
 
 
 ---
